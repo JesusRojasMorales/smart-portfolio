@@ -1,0 +1,8 @@
+
+<ng-container *ngIf="projects">
+    <div class="portfolio">
+        <div *ngFor="let project of projects" [ngClass]="project.size+' '+project.float">
+            <app-project-preview [project]="project"></app-project-preview>
+        </div>
+    </div>
+</ng-container>

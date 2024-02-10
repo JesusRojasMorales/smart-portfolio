@@ -1,0 +1,32 @@
+<ng-container *ngIf="aboutData">
+      <div class="row g-0 primary-card">
+        <div class="col-xl-12 col-md-12 col-sm-12 text-start py-3 px-2">
+          <h1 *ngIf="aboutData">{{aboutData.name + " " + aboutData.surename}}</h1>
+          <h2  *ngIf="aboutData">{{aboutData.profession}}</h2>
+          <p *ngFor="let p of aboutData.description">{{p}}</p>
+        </div>
+      </div>
+
+      <div class="row g-0 text-start primary-card">
+        <ul class="nav-tab-container d-flex p-3 pt-4">
+          <li class="tab me-2">
+            <a class="about-nav-link shadowed active" (click)="navClick('studies', $event)">Studies</a>
+          </li>
+          <li class="tab">
+            <a class="about-nav-link shadowed" (click)="navClick('experience', $event)">Experience</a>
+          </li>
+        </ul>
+
+        <div class="col-12">
+          <div class="timeline" *ngIf="selectedSlide=='studies'">
+            <app-about-item *ngFor="let edu of aboutData.education" class="timeline-item" [title]="edu.title" [place]="edu.place" [startDate]="edu.startDate" [endDate]="edu.endDate" [description]="edu.description">
+            </app-about-item>
+          </div>
+
+          <div class="timeline" *ngIf="selectedSlide=='experience'">
+            <app-about-item *ngFor="let exp of aboutData.experience" class="timeline-item" [title]="exp.title" [place]="exp.place" [startDate]="exp.startDate" [endDate]="exp.endDate" [description]="exp.description">
+            </app-about-item>
+          </div>
+        </div>
+      </div>
+  </ng-container>

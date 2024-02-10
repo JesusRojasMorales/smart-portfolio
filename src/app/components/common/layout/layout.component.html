@@ -1,0 +1,9 @@
+<div class="layout">
+	<app-header></app-header>
+	<div class="container container-md container-lg container-xl container-fluid shadowed-5">
+		<img  src="assets/images/home-cover-image.jpg" class="home-cover" alt="Portfolio Cover Image">
+        <h1 class="page-title">{{pageTitle$ | async}}</h1>
+		<router-outlet></router-outlet>
+		<app-footer class="footer"></app-footer>
+	</div>
+</div>

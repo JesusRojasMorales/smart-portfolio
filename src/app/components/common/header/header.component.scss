@@ -1,0 +1,114 @@
+header {
+    width: 100%;
+    color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fffe;
+    .navbar {
+        padding: 0rem;
+        .nav-item {
+            margin-inline-end: 2rem;
+            .nav-link {
+                padding: 0.5rem 1rem;
+                text-decoration: none;
+                color: #333;
+                &:hover {
+                    transition: 0.3s ease-in-out;
+                    background-color: #ddd;
+                }
+            }
+            .nav-link.active {
+                transition: 0.3s ease-in-out;
+                color: white;
+                background-color: #333;
+            }
+            .mobile-nav-link {
+                display: none;
+            }
+        }
+        .navbar-toggler{
+            display: none;
+        }
+    }
+    .navbar-brand{
+        padding: 1rem 2rem;
+        background-color: #fff0;
+    }
+    .logo {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: min-content !important;
+        width: min-content !important;
+        background: none !important;
+        top: unset;
+        left: unset;
+        bottom: 0;
+        right: 0;
+        .navbar {
+            width: 50vw !important;
+            margin-left: auto !important;
+            box-shadow: none !important;
+            .navbar-brand{
+                display: none !important;
+            }
+            .navbar-nav{
+                transition: 0.5s ease-in-out;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                transform: translate(100%, -5rem);
+            }
+            .nav-item {
+                width: 50vw;
+                text-align: center;
+                .nav-link.active {
+                    background-color: #333
+                }
+                .nav-link{
+                    width: 50vw !important;
+                    background-color: #fff;
+                }
+            }
+            .navbar-toggler{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                transition: 2s ease-in-out;
+                display: block;
+                margin-left: auto;
+                border: none;
+                border-radius: 0rem;
+                width: 3.5rem;
+                height: 3.5rem;
+                background-color: #333;
+                padding: 0.5rem 0.75rem;
+                margin: 1rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: fill;
+                    filter: invert(1);
+                }
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+        .navbar.show{
+            .navbar-nav{
+                transform: translate(0, -5rem);
+            }
+        }
+    }
+
+}

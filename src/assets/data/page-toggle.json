@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Proyectos",
+        "url": "/",
+        "active": "active",
+        "visible": true
+    },
+    {
+        "name": "Sobre mi",
+        "url": "/about",
+        "active": "",
+        "visible": true
+    },
+    {
+        "name": "Inspiración",
+        "url": "/inspiration",
+        "active": "",
+        "visible": false
+    },
+    {
+        "name": "Contacto",
+        "url": "/contact",
+        "active": "",
+        "visible": false
+    }
+]

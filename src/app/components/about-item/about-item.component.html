@@ -1,0 +1,14 @@
+<div  class="card about-item mb-3 shadowed">
+    <div class="card-header">
+        <h4 class="date-range m-0 mt-2 mb-3" *ngIf="startDate && endDate">
+            {{ startDate | date: 'MMM yyyy' }} - {{ endDate | date: 'MMM yyyy' }}
+        </h4>
+        <h4 class="date-range m-0 mt-2 mb-3" *ngIf="startDate && !endDate">
+            {{ startDate | date: 'MMM yyyy' }} - Present
+        </h4>
+        <h3 *ngIf="title" class="m-0 mb-2">{{ title }}</h3>
+    </div>
+    <div *ngIf="description" class="card-body p-0 pb-3">
+        <p *ngFor="let des of description" class="card-text">{{ des }}</p>
+    </div>
+</div>

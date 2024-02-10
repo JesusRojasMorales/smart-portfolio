@@ -1,0 +1,11 @@
+{
+    "/api": {
+        "target": "https://api.resend.com/",
+        "pathRewrite": {
+            "^/api": ""
+        },
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug"
+    }
+}

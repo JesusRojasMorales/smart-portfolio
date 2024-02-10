@@ -1,0 +1,41 @@
+.inspiration {
+    width: 100%;
+    height: max-content;
+    overflow: hidden;
+    .image-container{
+        aspect-ratio: 1/1;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    
+}
+
+.half {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.forth {
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+
+.right {
+    float: right;
+}
+
+
+@media screen and (max-width: 768px) {
+    .half {
+        width: 100%;
+    }
+
+    .forth {
+        width: 100%;
+    }
+}

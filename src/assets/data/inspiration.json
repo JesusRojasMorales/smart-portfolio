@@ -1,0 +1,52 @@
+[
+    {
+        "path": "assets/files/inspiration/inspiration-architecture-drawing-01.jpg",
+        "size": "forth",
+        "float": "left"
+    },
+    {
+        "path": "assets/files/inspiration/inspiration_cabain-insides.jpg",
+        "size": "forth",
+        "float": "left"
+    },
+    {
+        "path": "assets/files/inspiration/inspiration-architecture-drawing-03.jpg",
+        "size": "half",
+        "float": "right"
+    },
+    {
+        "path": "assets/files/inspiration/inspiration_german-shepherd.jpg",
+        "size": "forth",
+        "float": "left"
+    },
+    {
+        "path": "assets/files/svg/logo.svg",
+        "size": "forth",
+        "float": "left"
+    },
+    {
+        "path": "assets/files/inspiration/inspiration-arts-and-cience-city.jpg",
+        "size": "half",
+        "float": "left"
+    },
+    {
+        "path": "assets/files/svg/logo.svg",
+        "size": "forth",
+        "float": "left"
+    },
+    {
+        "path": "assets/files/inspiration/inspiration_reflected-cabain.jpg",
+        "size": "forth",
+        "float": "left"
+    },
+    {
+        "path": "assets/files/inspiration/inspiration_german-shepherd-drawing.jpg",
+        "size": "forth",
+        "float": "left"
+    },
+    {
+        "path": "assets/files/inspiration/inspiration_cabain.jpg",
+        "size": "forth",
+        "float": "left"
+    }
+]

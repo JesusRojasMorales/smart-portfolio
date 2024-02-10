@@ -1,0 +1,68 @@
+{
+    "name": "Alexandra",
+    "surename": "Birsanu",
+    "profession": "Arquitecta",
+    "description": [
+        "Actualmente estudio cuarto curso de arquitectura",
+        "Siempre he sentido la necesidad de crear espacios donde las personas puedan sentirse como en casa. Espacios donde estar seguros, cómodos, acogidos por la arquitectura. ",
+        "Por eso me embarqué en el mundo de la arquitectura, para poder crear espacios capaces de transmitir, de conmover, de despertar nuevas emociones… pero, sobre todo, espacios capaces de mejorar nuestro día a día.",
+        "Me considero una persona perfeccionista, precisa, que cuida cada simple y minúsculo detalle, buscando la excelencia. Esto me lleva también a ser muy autocrítica. También tengo mucha iniciativa y soy muy perseverante cuando me adentro en un proyecto. Busco dar todo de mí para crear algo único, por lo que soy muy creativa.",
+        "Estoy interesada en el mundo del interiorismo, las estructuras, la construcción y la maquetación. Me adapto rápido a nuevos ambientes, además, adoro aprender y soy aplicada en lo que hago. También me gusta trabajar en equipo, sobre todo cuando siento que estoy sumando y aportando valor al proyecto."
+    ],
+    "cv": "assets/files/cv.pdf",
+    "education": [
+        {
+            "title": "Grado en Fundamentos de Arquitectura (ETSA, UPV)",
+            "place": "Universidad Politécnica de Valencia",
+            "startDate": "2020-09-01",
+            "endDate": "",
+            "description": [
+                "Grado que proporciona la base, fundamentos y herramientas para formar a profesionales capaces de crear proyectos arquitectónicos que satisfagan a su vez las exigencias estéticas y las técnicas y los requisitos de sus usuarios/as, respetando los límites impuestos por los factores presupuestarios y la normativa sobre construcción."
+            ]
+        },
+        {
+            "title": "Bachillerato técnico",
+            "place": "Colegio San Roque, Valencia",
+            "startDate": "2018-09-01",
+            "endDate": "2020-06-01",
+            "description": null
+        }
+    ],
+    "experience": [
+        {
+            "title": "Estudiante de arquitectura",
+            "place": "Universidad Politécnica de Valencia",
+            "startDate": "2019-09-01",
+            "endDate": null,
+            "description": [
+                "Como estudiante, he realizado proyectos que me han ido formando como profesional, y he aprendido a  desarrollar un proyecto arquitectónico desde la idea, hasta el detalle. Se me ha formado en ámbitos como el urbanismo, el desarrollo de proyectos, la construcción, las soluciones estructurales, las instalaciones, además del bagaje cultural e histórico de la arquitectura."
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "title": "Adobe Photoshop"
+        },
+        {
+            "title": "AutoCAD"
+        },
+        {
+            "title": "Revit"
+        },
+        {
+            "title": "SketchUp"
+        },
+        {
+            "title": "QGIS"
+        },
+        {
+            "title": "DIALux"
+        },
+        {
+            "title": "Lumion"
+        },
+        {
+            "title": "3ds Max"
+        }
+    ]
+}

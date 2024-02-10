@@ -1,0 +1,35 @@
+.footer{
+    .footer-icon{
+        img{
+            transition: all 0.2s ease-in-out;
+            width: 2rem;
+            object-fit: contain;
+            filter: contrast(30%);
+        }
+        &:hover{
+            img{
+                filter: contrast(70%);
+                transform: scale(1.1);
+            }
+        }
+    }
+    a, p{
+        color: #888;
+    }
+    .footer-nav-item {
+        margin-bottom: 0.2rem;
+        text-decoration: none;
+        &:hover{
+            color: #333;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer{
+        .footer-navigation{
+            display: none !important;
+        }
+    }
+}

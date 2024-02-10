@@ -1,0 +1,36 @@
+.layout {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	.container {
+		position: absolute;
+		padding: 0;
+		background-color: #eee;
+		margin: 0;
+		width: 100%;
+		text-align: center;
+		transition: all 0.5s;
+		.home-cover {
+			filter: grayscale(50%);
+			width: 100%;
+			object-fit: cover;
+			height: 20rem;
+			margin: 0;
+		}
+	}
+}
+.content .visible {
+	opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+	.layout {
+		.container {
+			.home-cover {
+				height: 5rem;
+			}
+		}
+	}
+}
+

@@ -1,0 +1,74 @@
+.form-control{
+    z-index: 999;
+    font-family: 'Gotham', sans-serif;
+    border: 0px;
+    border-bottom: 2px solid #eee;
+    transition: 0.5s ease-in-out;
+    &:focus{
+        box-shadow: none;
+        border-bottom: 2px solid black;
+    }
+}
+
+.submit-button{
+    border: none;
+    background-color: #333;
+    cursor: pointer;
+    color: white;
+    transition: 0.2s ease-in-out;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    min-width: 10rem;
+    &:hover {
+        background-color: black;
+    }
+}
+
+label{
+    font-family: 'Gotham', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.card{
+    border: none;
+    border-radius: 0px;
+    padding-bottom: 0;
+}
+
+.contact-ilustration{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+.success-icon{
+    img{
+        filter: invert(50%) sepia(99%) saturate(341%) hue-rotate(113deg) brightness(92%) contrast(89%);
+    }
+}
+
+.error-icon{
+    img{
+        filter: invert(13%) sepia(50%) saturate(4499%) hue-rotate(352deg) brightness(104%) contrast(105%);
+    }
+}
+
+.result-message{
+    //apears smoothly
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+
+.feedback-error{
+    color: #881212;
+    font-size: 0.75rem;
+    font-family: 'Gotham', sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+.has-error{
+    border-bottom: 2px solid #881212 !important;
+}

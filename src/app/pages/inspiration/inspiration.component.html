@@ -1,0 +1,7 @@
+<ng-container>
+    <div class="inspiration">
+        <div class="image-container" *ngFor="let inspiration of inspirationData" [ngClass]="inspiration.size+' '+inspiration.float">
+            <img [src]="inspiration.path" alt="inspiration.path">
+        </div>
+    </div>
+</ng-container>

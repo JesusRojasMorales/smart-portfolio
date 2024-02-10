@@ -1,0 +1,93 @@
+<ng-container>
+    <div class="row g-0 justify-content-center">
+        <div class="col-xl-10 col-md-10 col-sm-12 primary-card mt-0">
+            <div class="card-body m-4 text-start">
+                <form class="contact-form form-group" [formGroup]="form">
+                    <div class="row text-start mb-3">
+                        <div class="col-md-6 mb-3">
+                            <label for="name" class="mb-2">Name</label>
+                            <input
+                                formControlName="name"
+                                type="text" class="form-control rounded-0"
+                                name="Name"
+                                id="name"
+                                placeholder="Name"
+                                [ngClass]="{'has-error': form.controls.name.errors?.required && form.controls.name.touched}"
+                            >
+                            <span class="feedback-error" *ngIf="form.controls.name.errors?.required && form.controls.name.touched">Name is required</span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="surname" class="mb-2">Surname</label>
+                            <input
+                                formControlName="surename"
+                                type="text"
+                                class="form-control rounded-0"
+                                name="Surename"
+                                id="surname"
+                                placeholder="Surename"
+                                [ngClass]="{'has-error': form.controls.surename.errors?.required && form.controls.surename.touched}"
+                            >
+                            <span class="feedback-error" *ngIf="form.controls.surename.errors?.required && form.controls.surename.touched">Surename is required</span>
+                        </div>
+                    </div>
+                    <div class="row text-start mb-3">
+                        <div class="col-md-6 mb-3">
+                            <label for="subject" class="mb-2">Subject</label>
+                            <input
+                                formControlName="subject"
+                                type="text"
+                                class="form-control rounded-0"
+                                name="Subject"
+                                id="subject"
+                                placeholder="Subject"
+                                [ngClass]="{'has-error': form.controls.subject.errors?.required && form.controls.subject.touched}"
+                            >
+                            <span class="feedback-error" *ngIf="form.controls.subject.errors?.required && form.controls.subject.touched">Subject is required</span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="email" class="mb-2">Reply to</label>
+                            <input
+                                formControlName="email"
+                                type="email"
+                                class="form-control rounded-0"
+                                name="Email"
+                                id="email"
+                                placeholder="youremail@domain.com"
+                                [ngClass]="{'has-error': form.controls.email.errors?.required && form.controls.email.touched || form.controls.email.errors?.email && form.controls.email.touched}"
+                            >
+                            <span class="feedback-error" *ngIf="form.controls.email.errors?.required && form.controls.email.touched">Email is required</span>
+                            <span class="feedback-error" *ngIf="form.controls.email.errors?.email && form.controls.email.touched">Email is not valid</span>
+                        </div>
+                    </div>
+                    <div class="row text-start">
+                        <div class="col-md-12 mb-3">
+                            <label for="message" class="mb-2">Message</label>
+                            <textarea
+                                formControlName="message"
+                                type="text"
+                                class="form-control rounded-0"
+                                name="Message"
+                                id="message"
+                                placeholder="Message"
+                                [ngClass]="{'has-error': form.controls.message.errors?.required && form.controls.message.touched}"
+                                oninput='this.style.height = ""; this.style.height = this.scrollHeight + "px"'
+                            ></textarea>
+                            <span class="feedback-error" *ngIf="form.controls.message.errors?.required && form.controls.message.touched">Message is required</span>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-9">
+                            <p *ngIf="successMessage != ''" class="result-message success-message">{{ successMessage }}</p>
+                            <p *ngIf="errorMessage != ''" class="result.message error-message">{{ errorMessage }}</p>
+                        </div>
+                        <div class="col-md-3">
+                            <a class="submit-button rounded-0 float-end text-centre" (click)="submit()">Send email</a>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <app-loader class="d-flex w-100 position-relative" [showLoader]="showLoader"></app-loader>
+        </div>
+    </div>
+</ng-container>
