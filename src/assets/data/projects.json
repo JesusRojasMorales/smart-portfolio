@@ -1,20 +1,21 @@
 [
     {
-        "id": 1,
-        "title" : "Complejo de estudiantes en Elda",
-        "description" : "Trabajo grupal de urbanismo realizado en 2º de carrera. Junto con mis compañeras Carola Moro y Rachele Gialletti.",
-        "date" : "2018-01-01",
-        "coverImagePath" : "assets/files/projects/project-05-elda/project-05-cover.PNG",
+        "id": 8,
+        "title" : "Vivienda obrador entre medianeras",
+        "description" : "Vivienda entre medianeras ubicada en el centro histórico d Valencia. Destaca por su gran patio trasero que articula la casa y le aporta la relación con la naturaleza que necesitan los usuarios. Proyecto que supuso un reto debido al estrecho solar (3 m. de ancho). Finalmente se logró crear cierta calidad espacial y aportar luz natural hasta la planta baja (lo cual era complicado debido al emplazamiento.",
+        "startDate": "2023-09-15",
+        "endDate": "2023-10-30", 
+        "coverImagePath" : "assets/files/projects/project-08-casa-obrador/project-08-cover1.PNG",
         "downloads": [
             {
-                "path": "assets/files/projects/project-05-elda/project-05-elda.pdf"
+                "path": "assets/files/projects/project-08-grau/project-08-vivienda-obrador-dosier.pdf"
+            },
+            {
+                "path": "assets/files/projects/project-02-grau/project-08-vivienda-obrador-panel-A1.pdf"
             }
         ],
-        "size": "forth",
-        "float": "right",
         "visible" : true
-    },
-    {
+    },{
         "id": 2,
         "title" : "El grau de Valencia",
         "description" : "Proyecto de 3º de carrera, junto con mis compañeras: Sara Jarbooh y Sara Balti. Entrega final tras nuestro extensivo análisis de la zona y numerosas entregas anteriores.",
@@ -31,8 +32,8 @@
     },
     {
         "id": 3,
-        "title" : "Edificio del Govierno Civil en Tarragona",
-        "description" : "Proyecto que consiste en un análisis del Gobierno Civil de Tarragona (del arquitecto Alejandro de la Sota), tratando de destacar los aspectos más significativos en dos paneles A2 complementarios.",
+        "title" : "Edificio del Gobierno Civil en Tarragona",
+        "description" : "Análisis del Gobierno Civil de Tarragona (arquitecto: Alejandro de la Sota). Se destacan los aspectos más significativos en dos paneles A2 complementarios.",
         "date" : "2018-01-01",
         "coverImagePath" : "assets/files/projects/project-06-govierno/project-06-cover.PNG",
         "downloads": [
@@ -46,8 +47,8 @@
     },
     {
         "id": 4,
-        "title" : "Biblioteca municipal",
-        "description" : "Proyecto final de 2º de arquitectura. Consta de una Biblioteca en el barrio del Grau, Valencia. Caracterizado por su relación con la plaza colindante, y ello reflejado en el gran muro cortina de fachada principal, que está orientado al este, y por tanto se tomaron medidas tales como lamas verticales para una cómoda distribución de la luz y el confort del usuario. Se partía de unas dimensiones y un programa limitados y se buscó una distribución lo más sencilla para el usuario. En el pdf se puede ver la evolución del proyecto en 3 fases de entrega, acabando con el resultado final.",
+        "title" : "Biblioteca",
+        "description" : "Ubicada en el barrio del Grau, Valencia. ",
         "date" : "2018-01-01",
         "coverImagePath" : "assets/files/projects/project-04-biblioteca/project-04-cover.PNG",
         "downloads": [
@@ -61,13 +62,14 @@
     },
     {
         "id": 5,
-        "title" : "Complejo rural en Los Padrones",
+        "title" : "Alojamiento Rural en Los Pedrones ",
         "description" : "Proyecto que aspira a convertirse en un refugio revitalizante, donde los usuarios puedan renovarse por completo. Ubicado en un entorno natural abrazado por la naturaleza, se parte de la idea de una acogedora 'casita del bosque' y se busca sobre todo garantizar el confort y la privacidad del usuario. Cabañas donde escapar de las preocupaciones y conectar completamente con la naturaleza.",
-        "date" : "2018-01-01",
-        "coverImagePath" : "assets/files/projects/project-01-padrones/project-01-cover.PNG",
+        "startDate": "2023-02-01",
+        "endDate": "2023-06-30", 
+        "coverImagePath" : "assets/files/projects/project-01-padrones/project-01-cover1.PNG",
         "downloads": [
             {
-                "path": "assets/files/projects/project-01-padrones/project-01-padrones.pdf"
+                "path": "assets/files/projects/project-01-padrones/project-01-alojamiento-rural.pdf"
             }
         ],
         "size": "half",
@@ -105,6 +107,21 @@
         ],
         "size": "forth",
         "float": "",
+        "visible" : true
+    },
+    {
+        "id": 1,
+        "title" : "TrElda",
+        "description" : "Trabajo grupal de urbanismo realizado en 2º curso. Junto con mis compañeras Carola Moro y Rachele Gialletti.",
+        "date" : "2018-01-01",
+        "coverImagePath" : "assets/files/projects/project-05-elda/project-05-cover.PNG",
+        "downloads": [
+            {
+                "path": "assets/files/projects/project-05-elda/project-05-elda.pdf"
+            }
+        ],
+        "size": "forth",
+        "float": "right",
         "visible" : true
     }
 ]
