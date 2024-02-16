@@ -96,10 +96,10 @@
     },
     {
         "id": 7,
-        "title" : "Centro cultural en el campus de Vera",
-        "description" : "Proyecto al que tuve mucho cariño en 2º de carrera. Nos propusieron hacer un centro cultural en el mismo campus de la UPV, y esta fue mi primera entrega donde se encontraba la idea principal.",
+        "title" : "Centro cultural en el campus de Vera, UPV",
+        "description" : "Primer proyecto arquitectónico de mi formación en el grado. Se muestra la idea primcipal o hilo conductor, a paartir del cual se desarrolló más en profundidad.",
         "date" : "2018-01-01",
-        "coverImagePath" : "assets/files/projects/project-07-centro-cultural/project-07-cover.PNG",
+        "coverImagePath" : "assets/files/projects/project-07-centro-cultural/project-07-cover1.PNG",
         "downloads": [
             {
                 "path": "assets/files/projects/project-07-centro-cultural/project-07-centro-cultural.pdf"
