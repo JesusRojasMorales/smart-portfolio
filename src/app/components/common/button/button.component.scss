@@ -1,0 +1,38 @@
+
+$primary: #333;
+$secondary: #eee;
+
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+}
+
+.primary{
+    background-color: $primary;
+    color: $secondary;
+    border: 1px solid $primary;
+}
+
+.secondary{
+    background-color: $secondary;
+    color: $primary;
+    border: 1px solid $secondary;
+}
+
+
+.outline{
+    &.primary{
+        background-color: transparent;
+        color: $primary;
+        border: 1px solid $primary;
+    }
+    &.secondary{
+        background-color: transparent;
+        color: $secondary;
+        border-color: $secondary;
+    }
+}
