@@ -2,7 +2,7 @@
 {
     
         "id": 1,
-        "order": 1,
+        "order": 2,
         "title" : "Alojamiento Rural en Los Pedrones ",
         "description" : "Proyecto que aspira a convertirse en un refugio revitalizante, donde los usuarios puedan renovarse por completo. Ubicado en un entorno natural abrazado por la naturaleza, se parte de la idea de una acogedora 'casita del bosque' y se busca sobre todo garantizar el confort y la privacidad del usuario. Cabañas donde escapar de las preocupaciones y conectar completamente con la naturaleza.",
         "startDate": "2023-02-01",
@@ -16,7 +16,8 @@
         "visible" : true
     }, 
     {
-        "id": 2,
+        "id": 2,        
+        "order": 9,
         "title" : "Propuesta urbanística en el Grau",
         "description" : "Masterplan ideado para el barrio del Grau, Valencia. Proyecto que se ideó en equipo con la intención de llenar el vacío que dejaron las pistas de formula 1 en las cercanías del puerto de Valencia. Se propone volumetría, infraestructura verde, desarrollo de parcelación, designación de equipamientos, entre otros.",
         "startDate": "2022-09-01",
@@ -31,6 +32,7 @@
     },    
     {
         "id": 3,
+        "order": 4,
         "title" : "Propuesta 'Palos' Ruralfest 2022",
         "description" : "Proyecto efímero realizado en equipo. Consiste en  crear un espacio de festival rural (rural fest), donde se potencien los productos y servicios de los habitantes del municipio de Requena, tratando de atraer más habitantes. Se ubica en un patio de colegio, en el cual se crea un recorrido mediante palos anclados a una base, algunos de ellos iluminables de noche. Durante el recorrido van apareciendo stands, donde los integrantes del pueblo venden sus productos.",
         "startDate": "2022-11-01",
@@ -48,8 +50,9 @@
     },
     {
         "id": 4,
+        "order": 3,
         "title" : "Biblioteca municipal en el Grau",
-        "description" : "Consiste en el emplazamiento de una biblioteca dentro del entorno del puerto de Valencia, en el barrio del Grau. Se ubica donde hubo una preexistencia, y hace función de equipamiento necesario (debido a la cantidad de escuelas cercanas). En los descargables se puede apreciar el proceso del proyecto. En estos se aprecia un resultado final que trabaja la planta con una banda de servicio, dejando el resto de espacios abiertos a la gran plaza que recibe la biblioteca. Se establece así una relación interior-exterior, gracias también a un gran muro cortina en la fachada principal.",
+        "description" : "Consiste en el emplazamiento de una biblioteca dentro del entorno del puerto de Valencia, en el barrio del Grau. En los descargables se puede apreciar el proceso del proyecto. En estos se aprecia un resultado final que trabaja la planta con una banda de servicio, dejando el resto de espacios abiertos a la gran plaza que recibe la biblioteca. Se establece así una relación interior-exterior, gracias también a un gran muro cortina en la fachada principal.",
         "startDate": "2022-02-01",
         "endDate": "2022-06-20", 
         "coverImagePath" : "assets/files/projects/project-04-biblioteca/project-04-cover1.png",
@@ -65,40 +68,15 @@
             }
         ],
         "visible" : true
-    },
+    },    
     {
-        "id": 6,
-        "title" : "Edificio del Gobierno Civil en Tarragona",
-        "description" : "Análisis del Gobierno Civil de Tarragona (arquitecto: Alejandro de la Sota). Se destacan los aspectos más significativos en dos paneles A2 complementarios.",
-        "startDate": "2022-11-01",
-        "endDate": "2022-12-20", 
-        "coverImagePath" : "assets/files/projects/project-06-govierno/project-06-cover.PNG",
-        "downloads": [
-            {
-                "path": "assets/files/projects/project-06-govierno/project-06-govierno.pdf"
-            }
-        ],
-        "visible" : true
-    },
-    {
-        "id": 7,
-        "title" : "Centro cultural en el campus de Vera, UPV",
-        "description" : "Primer proyecto arquitectónico de mi formación en el grado. Se muestra la idea primcipal o hilo conductor, a paartir del cual se desarrolló más en profundidad.",
-        "date" : "2018-01-01",
-        "coverImagePath" : "assets/files/projects/project-07-centro-cultural/project-07-cover1.png",
-        "downloads": [
-            {
-                "path": "assets/files/projects/project-07-centro-cultural/project-07-centro-cultural.pdf"
-            }
-        ],
-        "visible" : true
-    },
-    {
-        "id": 1,
-        "title" : "TrElda",
-        "description" : "Trabajo grupal de urbanismo realizado en 2º curso. Junto con mis compañeras Carola Moro y Rachele Gialletti.",
-        "date" : "2018-01-01",
-        "coverImagePath" : "assets/files/projects/project-05-elda/project-05-cover.PNG",
+        "id": 5,
+        "order": 10,
+        "title" : "Proyecto urbanístico en Elda, Alicante",
+        "description" : "Trabajo de equipo que consiste en potenciar y dar uso a un solar abandonado y a su entorno en las cercanias de un río. Se tratan temas como el pavimento, transporte, edificación y dotaciones en zonas verdes. ",
+        "startDate": "2022-01-01",
+        "endDate": "2022-06-20", 
+        "coverImagePath" : "assets/files/projects/project-05-elda/project-05-cover1.PNG",
         "downloads": [
             {
                 "path": "assets/files/projects/project-05-elda/project-05-elda.pdf"
@@ -107,9 +85,40 @@
         "visible" : true
     },
     {
+        "id": 6,
+        "order": 8,
+        "title" : "Edificio del Gobierno Civil en Tarragona",
+        "description" : "Análisis del Gobierno Civil de Tarragona (arquitecto: Alejandro de la Sota). Se destacan los aspectos más significativos en dos paneles A2 complementarios.",
+        "startDate": "2021-10-01",
+        "endDate": "2021-12-30", 
+        "coverImagePath" : "assets/files/projects/project-06-gobierno-tarragona/project-06-cover.PNG",
+        "downloads": [
+            {
+                "path": "assets/files/projects/project-06-gobierno-tarragona/project-06-gobierno-tarragona.pdf"
+            }
+        ],
+        "visible" : true
+    },
+    {
+        "id": 7,
+        "order": 7,
+        "title" : "Centro cultural en el campus de Vera, UPV",
+        "description" : "Primer proyecto arquitectónico de mi formación en el grado. Se muestra la idea primcipal o hilo conductor, a partir del cual se desarrolló más en profundidad.",
+        "startDate": "2021-09-15",
+        "endDate": "2021-10-30", 
+        "coverImagePath" : "assets/files/projects/project-07-centro-cultural/project-07-cover2.png",
+        "downloads": [
+            {
+                "path": "assets/files/projects/project-07-centro-cultural/project-07-centro-cultural.pdf"
+            }
+        ],
+        "visible" : true
+    },
+    {
         "id": 8,
+        "order": 1,
         "title" : "Vivienda obrador entre medianeras",
-        "description" : "Vivienda entre medianeras ubicada en el centro histórico d Valencia. Destaca por su gran patio trasero que articula la casa y le aporta la relación con la naturaleza que necesitan los usuarios. Proyecto que supuso un reto debido al estrecho solar (3 m. de ancho). Finalmente se logró crear cierta calidad espacial y aportar luz natural hasta la planta baja (lo cual era complicado debido al emplazamiento.",
+        "description" : "Vivienda entre medianeras ubicada en el centro histórico d Valencia. Destaca por su gran patio trasero que articula la casa y le aporta la relación con la naturaleza que necesitan los usuarios. Proyecto que supuso un reto debido al estrecho solar en el que se ubica.",
         "startDate": "2023-09-15",
         "endDate": "2023-10-30", 
         "coverImagePath" : "assets/files/projects/project-08-casa-obrador/project-08-cover1.png",
@@ -119,6 +128,39 @@
             },
             {
                 "path": "assets/files/projects/project-08-casa-obrador/project-08-vivienda-obrador-panel-A1.pdf"
+            }
+        ],
+        "visible" : true
+    },    
+    {
+        "id": 9,
+        "order": 6,
+        "title" : "Observatorio en Los Pedrones",
+        "description" : "Proyecto efímero de un observatorio en el entorno rural de Requena. Se trata de una plataforma de madera mínimamente elevada, la cual abraza unas ruinas preexistentes. Se encamina al usuario a las mejores vistas durante el día, y se incorporan redes que convierten el proyecto en un observatorio de estrellas al caer la noche.",
+        "startDate": "2022-09-15",
+        "endDate": "2022-10-30", 
+        "coverImagePath" : "assets/files/projects/project-09-observatorio/project-09-cover1.png",
+        "downloads": [
+            {
+                "path": "assets/files/projects/project-09-observatorio/project-09-ideación-observatorio.pdf"
+            },
+            {
+                "path": "assets/files/projects/project-09-observatorio/project-09-panel-final-observatorio.pdf"
+            }
+        ],
+        "visible" : true
+    },    
+    {
+        "id": 10,
+        "order": 5,
+        "title" : "Pop-Up Store:'Puzzle', CTAV",
+        "description" : "Proyecto de equipo para el concurso propuesto por el colegio de arquitectos de Valencia. Consiste en una única pieza de madera con dientes y fisuras en su perímetro que le permite adaptarse a cualquier espacio, y ofrecer gran variedad de disposiciones para exponer los productos del CTAV.",
+        "startDate": "2023-11-15",
+        "endDate": "2023-12-30", 
+        "coverImagePath" : "assets/files/projects/project-10-puzzle/project-10-cover1.png",
+        "downloads": [
+            {
+                "path": "assets/files/projects/project-10-puzzle/project-10-paneles-puzzle.pdf"
             }
         ],
         "visible" : true
