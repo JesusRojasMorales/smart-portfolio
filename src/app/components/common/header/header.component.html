@@ -13,6 +13,11 @@
                         <a class="nav-link" [ngClass]="page.active ? 'active' : ''" [routerLink]="page.url" (click)="toggleNavbar()">{{page.name}}</a>
                     </li>
                 </ul>
-            </nav>
+
+                <app-button type="primary" text="Primary"></app-button>
+                <app-button type="primary outline" text="Primary"></app-button>
+                <app-button type="secondary" text="Secondary"></app-button>
+                <app-button type="secondary outline" text="Secondary"></app-button>
+        </nav>
     </div>
 </header>
