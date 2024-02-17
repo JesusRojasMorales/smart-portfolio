@@ -1,97 +1,42 @@
-
-.card{
-    aspect-ratio: 1;
-	background: white;
-	position: relative;
-	border-radius: 0;
-	margin: 0;
-	&:hover{
-		&:before{ opacity: 1; }
-		.card-body{ 
-			opacity: 1; 
-			transform: translateY(0);
-		}
-	}
-			
-	&:before{
-        content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		display: block;
-		width: 100%;
-		height: 100%;
-		background: rgba(black, 0.6);
-		z-index: 2;
-		transition: 0.5s;
-		opacity: 0;
-    }	
-	.card-img-top{
-		position: absolute;
-		border-radius: 0;
+.project-info {
+    .project-cover-image {
         width: 100%;
-		height: 100%;
-		filter: grayscale(75%);
+        aspect-ratio: 1;
     }
-	h3{
-		padding: 0;
-		margin: 2rem;
-	}
-	.card-body {
-		display: inline-flex;
-		flex-direction: column;
-		justify-content: end;
-		align-items: center;
-		transform: translate(10%, 10%);
-		opacity: 0;
-		padding: 0;
-		padding-bottom: 2rem;
-		width: 100%;
-		z-index: 3;
-		color: white;
-		transition: 0.5s ease-in-out;
-		a{
-            transition: 0.5s; // Animación de transición suave
-			padding: 0.5rem 2rem 0.5rem 2rem; // Espaciado interno superior e inferior
-			text-decoration: none;
-			color: white; // Color de texto oscuro
-			border: 1px solid white;
-			cursor: pointer;
-			&:hover {
-				color: black; // Cambiar color al pasar el ratón
-				background-color: white;
-			}
-        }	
+}
+.back-button, .download-button {
+    display: inline-flex;
+    img{
+        width: 1rem;
+        height: 1.5rem;
+        object-fit: cover;
+    }
+    .text-button{
+        margin-left: 1rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    width: auto;
+    transition: all 0.3s ease-in-out;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: black;
+    &:hover {
+        background-color: #ddd;
+        border: none;
+        color: black;
     }
 }
 
-@media screen and (max-width: 768px) {
-	.card{
-		margin: 0rem 1rem 1rem 1rem;
-		box-shadow: 0 0 3px rgba(black, 0.2);
-		&:hover{
-			&:before{ opacity: 0; }
-			.card-body{ 
-				opacity: 1; 
-				transform: translateY(0);
-			}
-		}
-		.card-body {
-			color: #333;
-			position: relative;
-			transform: translateY(0);
-			opacity: 1;
-			a{
-				color: #333;
-				box-shadow: 0 0 5px rgba(black, 0.2);
-				background-color: #eee;
-				border: none;
-				z-index: 9999 !important;
-			}
-		}
-		.card-img-top{
-			position: relative;
-		}
-	}
+.file-name{
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    // end line with dots
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 
+.download-card{
+    width: auto;
 }
