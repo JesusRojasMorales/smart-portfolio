@@ -1,97 +1,82 @@
 [
-    {
-        "id": 8,
-        "title" : "Vivienda obrador entre medianeras",
-        "description" : "Vivienda entre medianeras ubicada en el centro histórico d Valencia. Destaca por su gran patio trasero que articula la casa y le aporta la relación con la naturaleza que necesitan los usuarios. Proyecto que supuso un reto debido al estrecho solar (3 m. de ancho). Finalmente se logró crear cierta calidad espacial y aportar luz natural hasta la planta baja (lo cual era complicado debido al emplazamiento.",
-        "startDate": "2023-09-15",
-        "endDate": "2023-10-30", 
-        "coverImagePath" : "assets/files/projects/project-08-casa-obrador/project-08-cover1.PNG",
+{
+    
+        "id": 1,
+        "title" : "Alojamiento Rural en Los Pedrones ",
+        "description" : "Proyecto que aspira a convertirse en un refugio revitalizante, donde los usuarios puedan renovarse por completo. Ubicado en un entorno natural abrazado por la naturaleza, se parte de la idea de una acogedora 'casita del bosque' y se busca sobre todo garantizar el confort y la privacidad del usuario. Cabañas donde escapar de las preocupaciones y conectar completamente con la naturaleza.",
+        "startDate": "2023-02-01",
+        "endDate": "2023-06-30", 
+        "coverImagePath" : "assets/files/projects/project-01-alojamiento-rural/project-01-cover1.png",
         "downloads": [
             {
-                "path": "assets/files/projects/project-08-grau/project-08-vivienda-obrador-dosier.pdf"
-            },
-            {
-                "path": "assets/files/projects/project-02-grau/project-08-vivienda-obrador-panel-A1.pdf"
+                "path": "assets/files/projects/project-01-padrones/project-01-alojamiento-rural.pdf"
             }
         ],
         "visible" : true
-    },{
+    }, 
+    {
         "id": 2,
-        "title" : "El grau de Valencia",
-        "description" : "Proyecto de 3º de carrera, junto con mis compañeras: Sara Jarbooh y Sara Balti. Entrega final tras nuestro extensivo análisis de la zona y numerosas entregas anteriores.",
-        "date" : "2018-01-01",
-        "coverImagePath" : "assets/files/projects/project-02-grau/project-02-cover.PNG",
+        "title" : "Propuesta urbanística en el Grau",
+        "description" : "Masterplan ideado para el barrio del Grau, Valencia. Proyecto que se ideó en equipo con la intención de llenar el vacío que dejaron las pistas de formula 1 en las cercanías del puerto de Valencia. Se propone volumetría, infraestructura verde, desarrollo de parcelación, designación de equipamientos, entre otros.",
+        "startDate": "2022-09-01",
+        "endDate": "2023-04-30", 
+        "coverImagePath" : "assets/files/projects/project-02-propuesta-urbanística-en-el-grau/project-02-cover1.png",
         "downloads": [
             {
-                "path": "assets/files/projects/project-02-grau/project-02-grau.pdf"
+                "path": "assets/files/projects/project-02-propuesta-urbanística-en-el-grau/project-02-grau.pdf"
             }
         ],
-        "size": "forth",
-        "float": "right",
+        "visible" : true
+    },    
+    {
+        "id": 3,
+        "title" : "Propuesta 'Palos' Ruralfest 2022",
+        "description" : "Proyecto efímero realizado en equipo. Consiste en  crear un espacio de festival rural (rural fest), donde se potencien los productos y servicios de los habitantes del municipio de Requena, tratando de atraer más habitantes. Se ubica en un patio de colegio, en el cual se crea un recorrido mediante palos anclados a una base, algunos de ellos iluminables de noche. Durante el recorrido van apareciendo stands, donde los integrantes del pueblo venden sus productos.",
+        "startDate": "2022-11-01",
+        "endDate": "2022-12-20", 
+        "coverImagePath" : "assets/files/projects/project-03-ruralfest/project-03-cover1.png",
+        "downloads": [
+            {
+                "path": "assets/files/projects/project-03-ruralfest/project-03-ruralfest-manual.pdf"
+            },
+            {
+                "path": "assets/files/projects/project-03-ruralfest/project-03-ruralfest-panels.pdf"
+            }
+        ],
         "visible" : true
     },
     {
-        "id": 3,
+        "id": 4,
+        "title" : "Biblioteca municipal en el Grau",
+        "description" : "Consiste en el emplazamiento de una biblioteca dentro del entorno del puerto de Valencia, en el barrio del Grau. Se ubica donde hubo una preexistencia, y hace función de equipamiento necesario (debido a la cantidad de escuelas cercanas). En los descargables se puede apreciar el proceso del proyecto. En estos se aprecia un resultado final que trabaja la planta con una banda de servicio, dejando el resto de espacios abiertos a la gran plaza que recibe la biblioteca. Se establece así una relación interior-exterior, gracias también a un gran muro cortina en la fachada principal.",
+        "startDate": "2022-02-01",
+        "endDate": "2022-06-20", 
+        "coverImagePath" : "assets/files/projects/project-04-biblioteca/project-04-cover1.png",
+        "downloads": [
+            {
+                "path": "assets/files/projects/project-04-biblioteca/project-04-biblioteca-entorno.pdf"
+            },
+            {
+                "path": "assets/files/projects/project-04-biblioteca/project-04-biblioteca-anteproyecto.pdf"
+            },
+            {
+                "path": "assets/files/projects/project-04-biblioteca/project-04-biblioteca-proyecto-final.pdf"
+            }
+        ],
+        "visible" : true
+    },
+    {
+        "id": 6,
         "title" : "Edificio del Gobierno Civil en Tarragona",
         "description" : "Análisis del Gobierno Civil de Tarragona (arquitecto: Alejandro de la Sota). Se destacan los aspectos más significativos en dos paneles A2 complementarios.",
-        "date" : "2018-01-01",
+        "startDate": "2022-11-01",
+        "endDate": "2022-12-20", 
         "coverImagePath" : "assets/files/projects/project-06-govierno/project-06-cover.PNG",
         "downloads": [
             {
                 "path": "assets/files/projects/project-06-govierno/project-06-govierno.pdf"
             }
         ],
-        "size": "half",
-        "float": "",
-        "visible" : true
-    },
-    {
-        "id": 4,
-        "title" : "Biblioteca",
-        "description" : "Ubicada en el barrio del Grau, Valencia. ",
-        "date" : "2018-01-01",
-        "coverImagePath" : "assets/files/projects/project-04-biblioteca/project-04-cover.PNG",
-        "downloads": [
-            {
-                "path": "assets/files/projects/project-04-biblioteca/project-04-biblioteca.pdf"
-            }
-        ],
-        "size": "half",
-        "float": "right",
-        "visible" : true
-    },
-    {
-        "id": 5,
-        "title" : "Alojamiento Rural en Los Pedrones ",
-        "description" : "Proyecto que aspira a convertirse en un refugio revitalizante, donde los usuarios puedan renovarse por completo. Ubicado en un entorno natural abrazado por la naturaleza, se parte de la idea de una acogedora 'casita del bosque' y se busca sobre todo garantizar el confort y la privacidad del usuario. Cabañas donde escapar de las preocupaciones y conectar completamente con la naturaleza.",
-        "startDate": "2023-02-01",
-        "endDate": "2023-06-30", 
-        "coverImagePath" : "assets/files/projects/project-01-padrones/project-01-cover1.PNG",
-        "downloads": [
-            {
-                "path": "assets/files/projects/project-01-padrones/project-01-alojamiento-rural.pdf"
-            }
-        ],
-        "size": "half",
-        "float": "",
-        "visible" : true
-    },
-    {
-        "id": 6,
-        "title" : "Propuesta 'Palos' Ruralfest 2022",
-        "description" : "Proyecto propuesto en el curso 22-23, realizado por un grupo de 5 personas, donde teníamos que crear un espacio para la realización de un festival rural (rural fest). Realizado junto a mis compañeros Rubén Senent Sánchez, Alejandro Reques Parra, Ramón García Rosell y Leonardo Valentino. El proyecto se titula 'PALOS', ya que se trata de un patio de colegio donde se crea un recorrido mediante palos anclados a una base,algunos de ellos iluminables. Durante el recorrido se incorporaron unos stands, donde los integrantes del pueblo pudieran vender sus productos.",
-        "date" : "2018-01-01",
-        "coverImagePath" : "assets/files/projects/project-03-ruralfest/project-03-cover.PNG",
-        "downloads": [
-            {
-                "path": "assets/files/projects/project-03-ruralfest/project-03-ruralfest-LM-29.pdf"
-            },
-            {
-                "path": "assets/files/projects/project-03-ruralfest/project-03-ruralfest-PR3-T2.pdf"
-            }
-        ],
-        "size": "forth",
-        "float": "",
         "visible" : true
     },
     {
@@ -105,8 +90,6 @@
                 "path": "assets/files/projects/project-07-centro-cultural/project-07-centro-cultural.pdf"
             }
         ],
-        "size": "forth",
-        "float": "",
         "visible" : true
     },
     {
@@ -120,8 +103,23 @@
                 "path": "assets/files/projects/project-05-elda/project-05-elda.pdf"
             }
         ],
-        "size": "forth",
-        "float": "right",
+        "visible" : true
+    },
+    {
+        "id": 8,
+        "title" : "Vivienda obrador entre medianeras",
+        "description" : "Vivienda entre medianeras ubicada en el centro histórico d Valencia. Destaca por su gran patio trasero que articula la casa y le aporta la relación con la naturaleza que necesitan los usuarios. Proyecto que supuso un reto debido al estrecho solar (3 m. de ancho). Finalmente se logró crear cierta calidad espacial y aportar luz natural hasta la planta baja (lo cual era complicado debido al emplazamiento.",
+        "startDate": "2023-09-15",
+        "endDate": "2023-10-30", 
+        "coverImagePath" : "assets/files/projects/project-08-casa-obrador/project-08-cover1.PNG",
+        "downloads": [
+            {
+                "path": "assets/files/projects/project-08-casa-obrador/project-08-vivienda-obrador-dosier.pdf"
+            },
+            {
+                "path": "assets/files/projects/project-08-casa-obrador/project-08-vivienda-obrador-panel-A1.pdf"
+            }
+        ],
         "visible" : true
     }
 ]
