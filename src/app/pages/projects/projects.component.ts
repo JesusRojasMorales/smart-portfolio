@@ -16,7 +16,7 @@ export class Projects implements OnInit {
 
   ngOnInit() {
     this.dataService.getAssetData<Project[]>('projects.json').subscribe(data => {
-      this.projects = data;
+      this.projects = data.sort((a, b) => a.order - b.order);
     });
   }
 }

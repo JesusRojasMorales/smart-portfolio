@@ -12,7 +12,3 @@ export class ButtonComponent {
     @Input() text = '';
     @Output() action = new EventEmitter();
 }
-
-
-
-

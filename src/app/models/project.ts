@@ -7,6 +7,7 @@ export interface Project {
     coverImagePath: string;
     downloads: Download[];
     visible: boolean;
+    order: number;
 }
 
 export interface Download {
