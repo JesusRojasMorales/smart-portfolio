@@ -21,10 +21,7 @@
             </div>
             <div class="col-auto g-0 d-flex align-content-center footer-navigation">
                 <div class="d-flex flex-column w-100 my-auto text-start">
-                    <a class="footer-nav-item mx-4" routerLink="/">Portfolio</a>
-                    <a class="footer-nav-item mx-4" routerLink="/about">About</a>
-                    <a class="footer-nav-item mx-4" routerLink="/inspiration">Inspiration</a>
-                    <a class="footer-nav-item mx-4" routerLink="/contact">Contact</a>
+<a *ngFor="let page of pages" class="footer-nav-item mx-4" [routerLink]="page.url">{{page.name}}</a>
                 </div>
             </div>
         </div>
