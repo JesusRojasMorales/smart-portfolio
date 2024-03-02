@@ -7,7 +7,6 @@ import { CommonModule } from "@angular/common";
 import { AboutItem } from "./about-item/about-item.component";
 import { LoaderComponent } from "./common/loader/loader.component";
 import { Footer } from "./common/footer/footer.component";
-import { ButtonComponent } from "./common/button/button.component";
 
 // export all components as a module
 
@@ -19,7 +18,6 @@ import { ButtonComponent } from "./common/button/button.component";
         ProjectPreview, 
         AboutItem,
         LoaderComponent,
-        ButtonComponent
     ],
     imports: [ AppRoutingModule, CommonModule ],
     exports: [ 
@@ -27,7 +25,6 @@ import { ButtonComponent } from "./common/button/button.component";
         ProjectPreview, 
         AboutItem,
         LoaderComponent,
-        ButtonComponent
     ],
 })
 export class ComponentsModule {}

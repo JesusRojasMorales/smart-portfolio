@@ -1,8 +1,6 @@
 
 <ng-container *ngIf="projects">
     <div class="portfolio">
-        <div *ngFor="let project of projects">
-            <app-project-preview [project]="project"></app-project-preview>
-        </div>
+        <app-project-preview *ngFor="let project of projects" [href]="project.id" [project]="project"></app-project-preview>
     </div>
 </ng-container>

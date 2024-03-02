@@ -25,25 +25,11 @@ export class Header implements OnInit {
 
     private activateCurrentLink(event: NavigationEnd): void {
         if (event instanceof NavigationEnd) {
-            // get route
-            let route = event.url;
-            // get all nav links
-            let links = document.querySelectorAll('.nav-link');
-            // get active link
-            let active = document.querySelector('.active');
-            // remove active class from active link
-            if (active) {
-                active.classList.remove('active');
-            }
-            // add active class to current link
-            for (let i = 0; i < links.length; i++) {
-                let link = links[i] as HTMLElement;
-                console.log(link);
-                console.log(route);
-                if (link.getAttribute('href') === "#"+route) {
-                    link.classList.add('active');
-                }
-            }
+            let links = document.querySelectorAll('.navlink');
+            links.forEach(link => {
+                if (link.getAttribute('ng-reflect-router-link') === event.url) link.classList.remove('inactive');
+                else link.classList.add('inactive');
+            });
         }
     }
 

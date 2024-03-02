@@ -1,8 +1,12 @@
 @import "bootstrap/scss/bootstrap";
 
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: CenturyGothic;
+    src: url(assets/fonts/CenturyGothic/CenturyGothic.ttf) format("opentype");
+}
+
 body{
-    font-family: 'Century Gothic', sans-serif;
+    font-family: 'CenturyGothic', sans-serif;
     background-color: #eee;
 }
 a{
@@ -41,14 +45,6 @@ h4 {
     font-weight: 300;
     letter-spacing: 0.1rem;
     margin: 0.25rem 2rem 0.25rem 2rem;
-}
-
-.page-title {
-    font-size: 8rem;
-    font-weight: 500;
-    letter-spacing: 0.5rem;
-    margin: 2rem;
-    transform: translateY(-150%);
 }
 
 p {
@@ -94,9 +90,80 @@ input, textarea{
     z-index: 1;
     transition: 0.3s ease-in-out;
     box-shadow: 0 0 21px rgba(0,0,0,0.1);
-    margin: 2rem;
+    margin: 0rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
+
+$primary: #333;
+$secondary: #eee;
+
+.button {
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.primary{
+    background-color: $primary;
+    color: $secondary;
+    border: 1px solid $primary;
+    &.inactive{
+        background-color: white;
+        color: black;
+        border: none;
+        &:hover{
+            background-color: darken($secondary, 5%);
+        }
+    }
+    &:hover{
+        background-color: darken($primary, 10%);
+    }
+}
+
+.secondary{
+    background-color: $secondary;
+    color: $primary;
+    border: 1px solid $secondary;
+    &.inactive{
+        background-color: black;
+        color: white;
+        border: none;
+        &:hover{
+            background-color: lighten($primary, 5%);
+        }
+    }
+    &:hover{
+        background-color: darken($secondary, 10%);
+    }
+}
+
+
+.outline{
+    &.primary{
+        background-color: transparent;
+        color: $primary;
+        border: 1px solid $primary;
+        &:hover{
+            background-color: $primary;
+            color: $secondary;
+        }
+    }
+    &.secondary{
+        background-color: transparent;
+        color: $secondary;
+        border-color: $secondary;
+        &:hover{
+            background-color: $secondary;
+            color: $primary;
+        }
+    }
+}
 
 .debug {
     border: 1px solid red;

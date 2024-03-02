@@ -1,23 +1,9 @@
-<header class="header  shadowed">
-    <div class="m-0 p-0">
-        <nav class="navbar navbar-expand-lg w-100">
-                <a class="navbar-brand d-flex align-items-center me-4" routerLink="/">
-                    <img src="assets/files/svg/logo.svg" alt="logo" class="logo">
-                </a>
-                <!-- Hamburguer toggle -->
-                <a class="navbar-toggler shadowed" (click)="toggleNavbar()">
-                    <img src="assets/files/svg/hamburger.svg">
-                </a>
-                <ul class="navbar-nav w-100">
-                    <li *ngFor="let page of pages" class="nav-item shadowed">
-                        <a class="nav-link" [ngClass]="page.active ? 'active' : ''" [routerLink]="page.url" (click)="toggleNavbar()">{{page.name}}</a>
-                    </li>
-                </ul>
-
-                <!-- <app-button type="primary" text="Primary"></app-button>
-                <app-button type="primary outline" text="Primary"></app-button>
-                <app-button type="secondary" text="Secondary"></app-button>
-                <app-button type="secondary outline" text="Secondary"></app-button> -->
-        </nav>
-    </div>
+<header class="header shadowed-5 w-100">
+    <a class="navigator-brand " routerLink="/">
+        <img src="assets/files/svg/logo.svg" alt="logo" class="logo">
+    </a>
+    <a class="navigator-toggler shadowed" (click)="toggleNavbar()">
+        <img src="assets/files/svg/hamburger.svg">
+    </a>
+    <a *ngFor="let page of pages" [routerLink]="page.url" class="button primary inactive navlink ms-3">{{page.name}}</a>
 </header>

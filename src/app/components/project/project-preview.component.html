@@ -1,9 +1,9 @@
 <ng-container>
-    <div class="row project-info g-0 primary-card mt-0">
-        <div class="col-xl-4 col-md-8 col-sm-8">
+    <div class="row project-info g-0 primary-card mb-5 shadowed-5">
+        <div class="col-xl-6 col-md-8 col-sm-8">
             <img [src]="project.coverImagePath" [alt]="project.title + ' Image'" class="project-cover-image">
         </div>
-        <div class="col-xl-8 col-md-12 col-sm-12 text-start py-3">
+        <div class="col-xl-6 col-md-12 col-sm-12 text-start p-3">
             <h1 class="m-4">{{ project.title }}</h1>
             <h3 class="m-4" *ngIf="project.startDate && project.endDate">
                 {{ project.startDate | date: 'MMM yyyy' }} - {{ project.endDate | date: 'MMM yyyy' }}

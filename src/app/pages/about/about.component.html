@@ -8,14 +8,11 @@
       </div>
 
       <div class="row g-0 text-start primary-card">
-        <ul class="nav-tab-container d-flex p-3 pt-4">
-          <li class="tab me-2">
-            <a class="about-nav-link shadowed active" (click)="navClick('studies', $event)">Studies</a>
-          </li>
-          <li class="tab">
-            <a class="about-nav-link shadowed" (click)="navClick('experience', $event)">Experience</a>
-          </li>
-        </ul>
+        <div class="nav-tab-container d-flex p-3 pt-4">
+            <a class="ms-3 about-nav-link button primary" (click)="navClick('studies', $event)">Estudios</a>
+            <a class="ms-3 about-nav-link button primary inactive" (click)="navClick('experience', $event)">Experiencia</a>
+            <a class="ms-3 about-nav-link button primary inactive" (click)="navClick('skills', $event)">Habilidades</a>
+        </div>
 
         <div class="col-12">
           <div class="timeline" *ngIf="selectedSlide=='studies'">
@@ -25,6 +22,11 @@
 
           <div class="timeline" *ngIf="selectedSlide=='experience'">
             <app-about-item *ngFor="let exp of aboutData.experience" class="timeline-item" [title]="exp.title" [place]="exp.place" [startDate]="exp.startDate" [endDate]="exp.endDate" [description]="exp.description">
+            </app-about-item>
+          </div>
+
+          <div class="timeline" *ngIf="selectedSlide=='skills'">
+            <app-about-item *ngFor="let skill of aboutData.skills" class="timeline-item" [title]="skill.title" [place]="skill.place" [startDate]="skill.startDate" [endDate]="skill.endDate" [description]="skill.description">
             </app-about-item>
           </div>
         </div>

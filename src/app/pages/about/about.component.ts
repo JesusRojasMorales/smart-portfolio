@@ -23,6 +23,7 @@ interface IAboutData {
   cv: string;
   education: IProfessionalItem[];
   experience: IProfessionalItem[];
+  skills: IProfessionalItem[];
 }
 
 @Component({
@@ -47,14 +48,11 @@ export class About implements OnInit{
 
   navClick(string: string, event: Event) {
     let element = event.target as HTMLElement;
-    if (element.classList.contains('active')) return;
-    else{
-      let elements = document.getElementsByClassName('about-nav-link');
-      for (let i = 0; i < elements.length; i++) {
-        elements[i].classList.remove('active');
-      }
-      element.classList.add('active');
-      this.selectedSlide = string;
+    let elements = document.getElementsByClassName('about-nav-link');
+    for (let i = 0; i < elements.length; i++) {
+      elements[i].classList.add('inactive');
     }
+    element.classList.remove('inactive');
+    this.selectedSlide = string;
   }
 }

@@ -12,11 +12,17 @@
 		text-align: center;
 		transition: all 0.5s;
 		.home-cover {
-			filter: grayscale(50%);
+			margin-top: 5rem;
 			width: 100%;
-			object-fit: cover;
-			height: 20rem;
-			margin: 0;
+			.page-title {
+				width: 100%;
+				font-size: 10rem;
+				font-weight: 0;
+				margin: 0;
+				padding-top: 2rem;
+				padding-bottom: 2rem;
+				color: black;
+			}
 		}
 	}
 }

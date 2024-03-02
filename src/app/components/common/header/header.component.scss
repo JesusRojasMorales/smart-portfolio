@@ -1,41 +1,35 @@
 header {
-    width: 100%;
     color: black;
     position: fixed;
-    top: 0;
     left: 0;
     z-index: 99999;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: #fffe;
-    .navbar {
-        padding: 0rem;
-        .nav-item {
-            margin-inline-end: 2rem;
-            .nav-link {
-                padding: 0.5rem 1rem;
-                text-decoration: none;
-                color: #333;
-                &:hover {
-                    transition: 0.3s ease-in-out;
-                    background-color: #ddd;
-                }
-            }
-            .nav-link.active {
-                transition: 0.3s ease-in-out;
-                color: white;
-                background-color: #333;
-            }
-            .mobile-nav-link {
-                display: none;
-            }
-        }
-        .navbar-toggler{
-            display: none;
+    // center items
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .navigator-link {
+        position: relative;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        color: #333;
+        &:hover {
+            transition: 0.3s ease-in-out;
+            background-color: #ddd;
         }
     }
-    .navbar-brand{
+    .navigator-link.active {
+        transition: 0.3s ease-in-out;
+        color: white;
+        background-color: #333;
+    }
+    .mobile-navigator-link {
+        display: none;
+    }
+    .navigator-toggler{
+        display: none;
+    }
+    .navigator-brand{
         padding: 1rem 2rem;
         background-color: #fff0;
     }
@@ -54,32 +48,32 @@ header {
         left: unset;
         bottom: 0;
         right: 0;
-        .navbar {
+        .navigator {
             width: 50vw !important;
             margin-left: auto !important;
             box-shadow: none !important;
-            .navbar-brand{
+            .navigator-brand{
                 display: none !important;
             }
-            .navbar-nav{
+            .navigator-link-container{
                 transition: 0.5s ease-in-out;
                 position: absolute;
                 bottom: 0;
                 right: 0;
                 transform: translate(100%, -5rem);
             }
-            .nav-item {
+            .navigator-item {
                 width: 50vw;
                 text-align: center;
-                .nav-link.active {
+                .navigator-link.active {
                     background-color: #333
                 }
-                .nav-link{
+                .navigator-link{
                     width: 50vw !important;
                     background-color: #fff;
                 }
             }
-            .navbar-toggler{
+            .navigator-toggler{
                 position: absolute;
                 right: 0;
                 bottom: 0;
@@ -104,8 +98,8 @@ header {
                 }
             }
         }
-        .navbar.show{
-            .navbar-nav{
+        .navigator.show{
+            .navigator-link-container{
                 transform: translate(0, -5rem);
             }
         }
