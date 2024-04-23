@@ -14,23 +14,14 @@ export class Header implements OnInit {
 
     pages: pageToggle[] = [];
 
+    public get currentUrl (): string {
+        return this.router.url;
+    }
+
     ngOnInit() {
-        this.router.events.subscribe(event => {
-            this.activateCurrentLink(event as NavigationEnd);
-        });
         this.dataService.getAssetData("page-toggle.json").subscribe(data => {
             this.pages = (data as pageToggle[]).filter(page => page.visible);
         });
-    }
-
-    private activateCurrentLink(event: NavigationEnd): void {
-        if (event instanceof NavigationEnd) {
-            let links = document.querySelectorAll('.navlink');
-            links.forEach(link => {
-                if (link.getAttribute('ng-reflect-router-link') === event.url) link.classList.remove('inactive');
-                else link.classList.add('inactive');
-            });
-        }
     }
 
     public toggleNavbar(): void {

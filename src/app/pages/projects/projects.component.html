@@ -1,6 +1,11 @@
 
 <ng-container *ngIf="projects">
     <div class="portfolio">
-        <app-project-preview *ngFor="let project of projects" [href]="project.id" [project]="project"></app-project-preview>
+        <app-project-preview *ngFor="let project of projects; let i = index" 
+            [href]="project.id" 
+            [project]="project"
+            [reverse]="i % 2 === 0"
+        >
+        </app-project-preview>
     </div>
 </ng-container>

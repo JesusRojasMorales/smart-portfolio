@@ -1,24 +1,27 @@
 <ng-container>
-    <div class="row project-info g-0 primary-card mb-5 shadowed-5">
-        <div class="col-xl-6 col-md-8 col-sm-8">
-            <img [src]="project.coverImagePath" [alt]="project.title + ' Image'" class="project-cover-image">
+    <div [ngClass]="{'flex-row-reverse': reverse}" class="d-flex project-info g-0 mb-5">
+        <div class="col-xl-6 col-md-8 col-sm-8 project-image shadowed-3" (click)="toggleDescription(project.id)">
+            <img [src]="project.coverImagePath" [alt]="project.title + ' Image'" class="project-cover-image" >
+            <span [ngClass]="{'project-image-overlay-reverse': reverse, 'project-image-overlay': !reverse}">VER {{ project.title }}</span>
         </div>
-        <div class="col-xl-6 col-md-12 col-sm-12 text-start p-3">
-            <h1 class="m-4">{{ project.title }}</h1>
-            <h3 class="m-4" *ngIf="project.startDate && project.endDate">
-                {{ project.startDate | date: 'MMM yyyy' }} - {{ project.endDate | date: 'MMM yyyy' }}
-            </h3>
-            <h3 class="m-4" *ngIf="project.startDate && !project.endDate">
-                {{ project.startDate | date: 'MMM yyyy' }} - Present
-            </h3>
-            <p class="m-4">{{ project.description }}</p>
-            <h3 class="m-4">Descargables</h3>
-            <div class="row g-0 px-4">
-                <div class="shadowed d-flex download-card m-0 mt-1 mb-3 me-2" *ngFor="let download of project.downloads">
-                    <p class="m-3 my-auto file-name">{{fileName(download.path)}}</p>
-                    <a class="download-button ms-auto" [href]="download.path" download>
-                        <img src="assets/files/svg/download.svg" alt="download" class="m-0 my-auto">
-                    </a>
+        <div [id]="project.id" class="col-xl-6 col-md-12 col-sm-12 text-start p-3" [ngClass]="{'project-description-wrapper-reverse': reverse, 'project-description-wrapper': !reverse}">
+            <div class="project-description">
+                <h1 class="m-4">{{ project.title }}</h1>
+                <h3 class="m-4" *ngIf="project.startDate && project.endDate">
+                    {{ project.startDate | date: 'MMM yyyy' }} - {{ project.endDate | date: 'MMM yyyy' }}
+                </h3>
+                <h3 class="m-4" *ngIf="project.startDate && !project.endDate">
+                    {{ project.startDate | date: 'MMM yyyy' }} - Present
+                </h3>
+                <p class="m-4 text-white">{{ project.description }}</p>
+                <h3 class="m-4">Descargables</h3>
+                <div class="row g-0 px-4">
+                    <div class="shadowed d-flex download-card m-0 mt-1 mb-3 me-2 text-white" *ngFor="let download of project.downloads">
+                        <p class="m-3 my-auto file-name text-white">{{fileName(download.path)}}</p>
+                        <a class="download-button ms-auto" [href]="download.path" download>
+                            <img src="assets/files/svg/download.svg" alt="download" class="m-0 my-auto">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

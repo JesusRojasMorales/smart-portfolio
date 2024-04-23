@@ -13,11 +13,21 @@ export class ProjectPreview {
 
   // input project
   @Input() project: Project
+  @Input() reverse: boolean = false;
   downloadSizes: Map<string, string> = new Map<string, string>();
 
   constructor(private dataService: DataService, private route: ActivatedRoute) { }
 
   fileName(path: string) {
     return path.split('/').pop();
+  }
+
+  toggleDescription(id: number) {
+    let desc = document.getElementById(id.toString());
+    if (desc.classList.contains('visible')) {
+      desc.classList.remove('visible');
+    } else {
+      desc.classList.add('visible');
+    }
   }
 }

@@ -61,32 +61,34 @@ input, textarea{
 
 
 .shadowed {
-    box-shadow: 0 0 2px rgba(0,0,0,0.2);
+    box-shadow: 0 0 5px rgba(0,0,0,0.1) !important;
 }
 
 .shadowed-1{
-    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1) !important;
 }
 
 .shadowed-2{
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    box-shadow: 0 0 15px rgba(0,0,0,0.15) !important;
 }
 
 .shadowed-3{
-    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px rgba(0,0,0,0.15) !important;
 }
 
 .shadowed-4{
-    box-shadow: 0 0 13px rgba(0,0,0,0.2);
+    box-shadow: 0 0 25px rgba(0,0,0,0.2) !important;
 }
 
 .shadowed-5{
-    box-shadow: 0 0 21px rgba(0,0,0,0.2);
+    box-shadow: 0 0 30px rgba(0,0,0,0.2) !important;
 }
 
 
+
+
 .primary-card {
-    background-color: #ffffff66;
+    background-color: #eee;
     z-index: 1;
     transition: 0.3s ease-in-out;
     box-shadow: 0 0 21px rgba(0,0,0,0.1);
@@ -106,7 +108,7 @@ $secondary: #eee;
     transition: all 0.2s ease-in-out;
     text-transform: uppercase;
     letter-spacing: 0.25rem;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
 }
 
 .primary{

@@ -4,6 +4,59 @@
         aspect-ratio: 1;
     }
 }
+
+.project-image{
+    overflow: hidden; 
+    z-index: 1;
+    img{
+        transition: all 0.5s ease-in-out;
+        &:hover{
+            transform: scale(1.05);
+            filter: brightness(0.75);
+        }
+    }
+    .project-image-overlay, .project-image-overlay-reverse{
+        position: absolute;
+        transition: all 0.5s ease-in-out;
+        position: absolute;
+        width : 50%;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        text-transform: uppercase;
+        padding: 1rem;
+    }
+    .project-image-overlay{
+        left: 0;
+        transform: translateX(-0%);
+    }
+    .project-image-overlay-reverse{
+        right: 0;
+    }
+    &:hover {
+        cursor: pointer;
+        .project-image-overlay, .project-image-overlay-reverse{
+            opacity: 1;
+        }
+    }
+}
+
+.project-description-wrapper {
+    transition: all 0.5s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.project-description-wrapper-reverse {
+    transition: all 0.5s ease-in-out;
+    transform: translateX(100%);
+}
+
+.project-description-wrapper.visible, .project-description-wrapper-reverse.visible {
+    transform: translateX(0);
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+}
+
 .back-button, .download-button {
     display: inline-flex;
     img{
@@ -31,7 +84,6 @@
 .file-name{
     font-size: 1rem;
     letter-spacing: 0.1rem;
-    // end line with dots
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -39,4 +91,14 @@
 
 .download-card{
     width: auto;
+    .download-button{
+        img{
+            filter: invert(1);
+        }
+        &:hover{
+            img{
+                filter: none;
+            }
+        }
+    }
 }
