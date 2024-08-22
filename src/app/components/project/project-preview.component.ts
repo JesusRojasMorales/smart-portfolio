@@ -1,7 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Observable, of } from 'rxjs';
-import { Project } from 'src/app/models/project';
+import { IProject } from 'src/app/models/project.model';
 import { DataService } from 'src/app/services/data.service';
 
 @Component({
@@ -9,10 +8,9 @@ import { DataService } from 'src/app/services/data.service';
   templateUrl: './project-preview.component.html',
   styleUrls: ['./project-preview.component.scss']
 })
-export class ProjectPreview {
+export class ProjectPreviewComponent {
 
-  // input project
-  @Input() project: Project
+  @Input() project: IProject
   @Input() reverse: boolean = false;
   downloadSizes: Map<string, string> = new Map<string, string>();
 

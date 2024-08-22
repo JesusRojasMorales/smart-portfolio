@@ -1,25 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import * as moment from 'moment';
-import { pageToggle } from 'src/app/models/pageToggle';
+import { IFooterData } from 'src/app/models/footer-data.model';
+import { IPageToggle } from 'src/app/models/page-toggle.model';
 import { DataService } from 'src/app/services/data.service';
-
-
-interface IFooterData {
-    name: string;
-    linkedin: string;
-    tumblr: string;
-    instagram: string;
-    whatsapp: string;
-}
 
 @Component({
     selector: 'app-footer',
     templateUrl: './footer.component.html',
     styleUrls: ['./footer.component.scss']
 })
-export class Footer implements OnInit {
-
-
+export class FooterComponent implements OnInit {
 
     footerData: IFooterData = {
         name: '',
@@ -29,7 +19,7 @@ export class Footer implements OnInit {
         whatsapp: ''
     };
 
-    pages: pageToggle[] = [];
+    pages: IPageToggle[] = [];
 
     constructor(private dataService: DataService) {}
 
@@ -39,7 +29,7 @@ export class Footer implements OnInit {
         });
 
         this.dataService.getAssetData("page-toggle.json").subscribe(data => {
-            this.pages = (data as pageToggle[]).filter(page => page.visible);
+            this.pages = (data as IPageToggle[]).filter(page => page.visible);
         });
     }
 

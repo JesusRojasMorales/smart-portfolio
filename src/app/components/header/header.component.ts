@@ -1,18 +1,18 @@
-import { Component, OnChanges, OnInit } from "@angular/core";
-import { NavigationEnd, Router } from "@angular/router";
+import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
+import { IPageToggle } from "src/app/models/page-toggle.model";
 import { DataService } from "src/app/services/data.service";
-import { pageToggle } from "src/app/models/pageToggle";
 
 @Component({
     selector: 'app-header',
     templateUrl: './header.component.html',
-    styleUrls: ['./header.component.scss']
+    styleUrls: ['./header.component.scss'],
 })
-export class Header implements OnInit {
+export class HeaderComponent implements OnInit {
 
     constructor(private router: Router, private dataService: DataService) { }
 
-    pages: pageToggle[] = [];
+    pages: IPageToggle[] = [];
 
     public get currentUrl (): string {
         return this.router.url;
@@ -20,7 +20,7 @@ export class Header implements OnInit {
 
     ngOnInit() {
         this.dataService.getAssetData("page-toggle.json").subscribe(data => {
-            this.pages = (data as pageToggle[]).filter(page => page.visible);
+            this.pages = (data as IPageToggle[]).filter(page => page.visible);
         });
     }
 

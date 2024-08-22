@@ -1,30 +1,30 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { About } from './pages/about/about.component';
-import { Projects } from './pages/projects/projects.component';
-import { Contact } from './pages/contact/contact.component';
-import { Inspiration } from './pages/inspiration/inspiration.component';
-import { PageToggle } from './guards/PageToggle.guard';
+import { AboutPage } from './pages/about/about.page';
+import { ProjectsPage } from './pages/projects/projects.page';
+import { ContactPage } from './pages/contact/contact.page';
+import { PageToggle } from './guards/page-toggle.guard';
+import { PortfolioPage } from './pages/portfolio/portfolio.page';
 
 const routes: Routes = [
     {
         path: '',
-        component: Projects,
+        component: PortfolioPage,
+        canActivate: [PageToggle],
+    },
+    {
+        path: 'projects',
+        component: ProjectsPage,
         canActivate: [PageToggle],
     },
     {
         path: 'about',
-        component: About,
+        component: AboutPage,
         canActivate: [PageToggle]
     },
     {
         path: 'contact',
-        component: Contact,
-        canActivate: [PageToggle]
-    },
-    {
-        path: 'inspiration',
-        component: Inspiration,
+        component: ContactPage,
         canActivate: [PageToggle]
     },
 ];
@@ -39,3 +39,5 @@ const routes: Routes = [
     exports: [RouterModule]
 })
 export class AppRoutingModule { }
+export { routes };
+

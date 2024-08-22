@@ -4,10 +4,10 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
     selector: 'app-contact',
-    templateUrl: './contact.component.html',
-    styleUrls: ['./contact.component.scss']
+    templateUrl: './contact.page.html',
+    styleUrls: ['./contact.page.scss']
 })
-export class Contact implements OnInit {
+export class ContactPage implements OnInit {
 
     constructor(private EmailService: EmailService) { }
 

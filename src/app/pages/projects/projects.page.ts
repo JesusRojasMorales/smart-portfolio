@@ -1,21 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-import { Project } from 'src/app/models/project';
+import { IProject } from 'src/app/models/project.model';
 import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-projects',
-  templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss'],
+  templateUrl: './projects.page.html',
+  styleUrls: ['./projects.page.scss'],
   providers: [DataService]
 })
-export class Projects implements OnInit {
+export class ProjectsPage implements OnInit {
 
-  projects: Project[];
+  projects: IProject[];
 
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    this.dataService.getAssetData<Project[]>('projects.json').subscribe(data => {
+    this.dataService.getAssetData<IProject[]>('projects.json').subscribe(data => {
       this.projects = data.sort((a, b) => a.order - b.order);
     });
   }

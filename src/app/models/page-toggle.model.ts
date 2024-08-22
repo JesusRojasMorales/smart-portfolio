@@ -1,4 +1,4 @@
-export interface pageToggle {
+export interface IPageToggle {
     name: string;
     url: string;
     active: string;

@@ -1,38 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+import { IAboutData } from 'src/app/models/about-data.model';
 import { DataService } from 'src/app/services/data.service';
-
-interface IProfessionalItem {
-  title: string;
-  place: string;
-  startDate: Date;
-  endDate: Date;
-  description: string;
-}
-
-interface IAboutData {
-  name: string;
-  surename: string;
-  profession: string;
-  address: string;
-  city: string;
-  country: string;
-  phone: string;
-  email: string;
-  description: string[];
-  profileImage: string;
-  cv: string;
-  education: IProfessionalItem[];
-  experience: IProfessionalItem[];
-  skills: IProfessionalItem[];
-}
 
 @Component({
   selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss'],
+  templateUrl: './about.page.html',
+  styleUrls: ['./about.page.scss'],
   providers: [DataService]
 })
-export class About implements OnInit{
+export class AboutPage implements OnInit{
 
   selectedSlide: string = 'studies';
   currentActiveNavItem: HTMLElement;

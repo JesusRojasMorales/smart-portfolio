@@ -1,16 +1,16 @@
-export interface Project {
+export interface IProject {
     id: number;
     title: string;
     description: string;
     startDate: Date;
     endDate: Date;
     coverImagePath: string;
-    downloads: Download[];
+    downloads: IDownload[];
     visible: boolean;
     order: number;
 }
 
-export interface Download {
+interface IDownload {
     name: string;
     path: string;
 }

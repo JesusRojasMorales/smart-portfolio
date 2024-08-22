@@ -1,29 +1,30 @@
 import { NgModule } from "@angular/core";
-import { Header } from "./common/header/header.component";
-import { Layout } from "./common/layout/layout.component";
-import { ProjectPreview } from "./project/project-preview.component";
+import { HeaderComponent } from "./header/header.component";
+import { LayoutComponent } from "./layout/layout.component";
+import { ProjectPreviewComponent } from "./project/project-preview.component";
 import { AppRoutingModule } from "../app-routing.module";
 import { CommonModule } from "@angular/common";
-import { AboutItem } from "./about-item/about-item.component";
-import { LoaderComponent } from "./common/loader/loader.component";
-import { Footer } from "./common/footer/footer.component";
-
-// export all components as a module
+import { AboutItemComponent  } from "./about-item/about-item.component";
+import { LoaderComponent } from "./loader/loader.component";
+import { FooterComponent } from "./footer/footer.component";
 
 @NgModule({
     declarations: [
-        Footer,
-        Header, 
-        Layout, 
-        ProjectPreview, 
-        AboutItem,
+        FooterComponent,
+        HeaderComponent, 
+        LayoutComponent, 
+        ProjectPreviewComponent, 
+        AboutItemComponent ,
         LoaderComponent,
     ],
-    imports: [ AppRoutingModule, CommonModule ],
+    imports: [ 
+        AppRoutingModule, 
+        CommonModule 
+    ],
     exports: [ 
-        Layout,
-        ProjectPreview, 
-        AboutItem,
+        LayoutComponent,
+        ProjectPreviewComponent, 
+        AboutItemComponent ,
         LoaderComponent,
     ],
 })

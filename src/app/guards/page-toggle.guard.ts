@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot, UrlTree } from '@angular/router';
 import { map } from 'rxjs/operators';
 import { DataService } from '../services/data.service';
-import { pageToggle } from '../models/pageToggle';
+import { IPageToggle } from '../models/page-toggle.model';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -20,7 +20,7 @@ export class PageToggle implements CanActivate {
     private IsPageEnabled(url: string): Observable<boolean> {
         return this.dataService.getAssetData("page-toggle.json").pipe(
             map(data => {
-                const pages = data as pageToggle[];
+                const pages = data as IPageToggle[];
                 const page = pages.find(page => page.url === url);
                 return page ? page.visible : false;
             })
