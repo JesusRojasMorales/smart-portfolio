@@ -32,9 +32,10 @@ const routes: Routes = [
 @NgModule({
     imports: [RouterModule.forRoot(routes,
         {
-            useHash: true,
-            initialNavigation: 'enabled'
-        }
+    useHash: true,
+    initialNavigation: 'enabled',
+    relativeLinkResolution: 'legacy'
+}
     )],
     exports: [RouterModule]
 })
