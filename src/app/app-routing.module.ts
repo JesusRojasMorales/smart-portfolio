@@ -30,15 +30,12 @@ const routes: Routes = [
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes,
-        {
-    useHash: true,
-    initialNavigation: 'enabled',
-    relativeLinkResolution: 'legacy'
-}
-    )],
+    imports: [RouterModule.forRoot(routes, {
+            useHash: true,
+            initialNavigation: 'enabledBlocking',
+            relativeLinkResolution: 'legacy'
+    })],
     exports: [RouterModule]
 })
 export class AppRoutingModule { }
 export { routes };
-

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EmailService } from '../../services/email.service';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms';
 
 @Component({
     selector: 'app-contact',
@@ -14,15 +14,15 @@ export class ContactPage implements OnInit {
     successMessage: string = '';
     errorMessage: string = '';
     showLoader: boolean = false;
-    form: FormGroup;
+    form: UntypedFormGroup;
 
     ngOnInit() {
-        this.form = new FormGroup({
-            name: new FormControl('', Validators.required),
-            surename: new FormControl('', Validators.required),
-            subject: new FormControl('', Validators.required),
-            email: new FormControl('', [Validators.required, Validators.email]),
-            message: new FormControl('', Validators.required)
+        this.form = new UntypedFormGroup({
+            name: new UntypedFormControl('', Validators.required),
+            surename: new UntypedFormControl('', Validators.required),
+            subject: new UntypedFormControl('', Validators.required),
+            email: new UntypedFormControl('', [Validators.required, Validators.email]),
+            message: new UntypedFormControl('', Validators.required)
         });
     }
 
