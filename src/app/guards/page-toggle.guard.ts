@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot, UrlTree } from '@angular/router';
+import { ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree } from '@angular/router';
 import { map } from 'rxjs/operators';
 import { DataService } from '../services/data.service';
 import { IPageToggle } from '../models/page-toggle.model';
@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 @Injectable({
  providedIn: 'root'
 })
-export class PageToggle implements CanActivate {
+export class PageToggle  {
 
     constructor(private dataService: DataService) { }
 
