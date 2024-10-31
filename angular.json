@@ -16,7 +16,7 @@
             "outputPath": "dist/smart-portfolio",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
+            "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
@@ -63,26 +63,26 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "proxyConfig": "src/proxy.conf.json",
-            "browserTarget": "smart-portfolio:build"
+            "buildTarget": "smart-portfolio:build"
           },
           "configurations": {
             "production": {
               "proxyConfig": "src/proxy.conf.json",
-              "browserTarget": "smart-portfolio:build:production"
+              "buildTarget": "smart-portfolio:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "smart-portfolio:build"
+            "buildTarget": "smart-portfolio:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
+            "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
